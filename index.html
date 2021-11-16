@@ -69,6 +69,7 @@
   <!------------------- porfolio ---------------------->
 
   <div class="container" id="porfolio">
+    <h1>Portfolio</h1>
     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
       <div class="col">
         <section class="card mb-3" id="book cover">
@@ -112,20 +113,130 @@
 
 <!------------------- animations ---------------------->
 
+<div class="container mt-4">
+
+  <section class="content" id="animations">
+    <h1>Animations</h1>
+    <h2>View animations below</h2>
+    <p>Wisdom Pet Medicine strives to blend the best in traditional and alternative 
+      <a href="#" data-toggle="tooltip" data-placement="top"
+      title="Animations">medicine</a> inthwieufhweoifhew</p>
+    <p>We strive to be your pet's medical</p>
+
+
+    <button type="button" class="btn btn-info"
+    data-toggle="popover"
+    data-placement="bottom"
+    data-trigger="hover"
+    title="Standard Checkups"
+    data-content="Out standard checkups offer">
+      Checkup Info
+    </button>
+
+  </section>
+  
+  </div><!-- content container -->
+
+
 
 
 <!------------------- skills section using list groups ---------------------->
 
+<div class="container">
+  <div class="row">
+    <section class="col-12">
+
+<section class="content" id="skills">
+  <h3>Skills</h3>
+<div class="list-group mb-3">
+  <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+  <span class="badge badge-info badge-pill">Skills</span>
+  <a class="list-group-item list-group-item-action list-group-item-success" href="#">Communication</a>
+  <a class="list-group-item list-group-item-action list-group-item-info"  href="#">Adobe Creative Suite</a>
+  <a class="list-group-item list-group-item-action list-group-item-warning" href="#">Database Management</a>
+  <a class="list-group-item list-group-item-action list-group-item-danger" href="#">Photography</a>
+  <a class="list-group-item list-group-item-action" href="#">DJ</a>
+</div>
+
+</section>
+    </section>
+  </div><!-- row -->
+</div><!-- content container -->
 
 
 
-
-<!------------------- education ---------------------->
+<!------------------- education section using collapse ---------------------->
   
+<div class="container" id="education">
+  <div class="row">
+    <section class="col-12">
+
+<h3>Education</h3>
+ 
+<button class="btn btn-primary mb-3" data-toggle="collapse"
+data-target="#educationsection" aria-expanded="Link to Pest">
+  click here for contact info
+</button>
+<div id="educationsection" class="collapse">
+  jsanger@northislandcollege.ca
+</div>
+
+<div id="educationaccordion" role="tablist" aria-multiselectable="true">
+
+  <div class="card">
+
+    <div class="card-header" role="tab" id="groomingheading">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" data-parent="#educationaccordion" 
+        href="#grooming" aria-expanded="true" 
+        aria-controls="grooming">North Island College</a>
+      </h5>
+    </div><!-- card header -->
+
+    <div id="grooming" class="collapse show"
+    role="tabpanel" aria-labelledby="groomingheading">
+      <div class="card-body">
+        <p>Communications Design Diploma</p>
+      </div>
+    </div><!-- collapse -->
+  </div><!-- card --> 
+  
+
+
+  <div class="card-header" role="tab" id="groomingheading">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" data-parent="#servicesaccordion" 
+      href="#grooming" aria-expanded="true" 
+      aria-controls="grooming">University of Saskatchewan</a>
+    </h5>
+  </div><!-- card header -->
+
+  <div id="grooming" class="collapse show"
+  role="tabpanel" aria-labelledby="groomingheading">
+    <div class="card-body">
+      <p>Bachelor of Commerce</p>
+    </div>
+  </div><!-- collapse -->
+</div><!-- card --> 
+
+
+</div>
+
+
+<!------------------- end of educaton section ---------------------->
 
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+<script>
+  $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+  });
+
+</script>
+
 </body>
 </html>
